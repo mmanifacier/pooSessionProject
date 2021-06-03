@@ -34,14 +34,9 @@
             unset($this->attribut[$key]);
         }
 
-        public function wakeup()
-        {
-            echo ('Reconstruction de l\'objet');
-        }
-
         public function __wakeup()
         {
-            $this->wakeup();
+            echo ('Reconstruction de l\'objet');
         }
     }
 
